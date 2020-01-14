@@ -1,0 +1,56 @@
+Bootstrap
+--------------------------------------------
+https://getbootstrap.com/
+
+jQuery
+--------------------------------------------
+https://jquery.com/
+
+jQuery CDN
+--------------------------------------------
+https://code.jquery.com/
+jQuery 3.x
+
+    jQuery Core 3.4.1 
+
+<script
+			  src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+			  crossorigin="anonymous"></script>
+
+
+https://www.w3schools.com/jquery/jquery_get_started.asp
+
+
+Iconos Bootstrap
+--------------------------------------------
+https://getbootstrap.com/docs/4.4/extend/icons/
+https://fontawesome.com/
+
+
+Font Awesome
+--------------------------------------------
+https://cdn.fontawesome.com/embed-codes
+Js
+<script src="https://use.fontawesome.com/cd9d8f2630.js"></script>
+CSS
+
+<link rel="stylesheet" href="https://use.fontawesome.com/cd9d8f2630.css">
+
+
+Update Sublime Text 3
+--------------------------------------------
+https://www.sublimetext.com/docs/3/linux_repositories.html
+https://packagecontrol.io/installation
+
+
+
+Run Phonegap in Broser
+--------------------------------------------
+$ phonegap serve
+[phonegap] starting app server...
+[phonegap] listening on 192.168.1.67:3000
+[phonegap] listening on 192.168.1.75:3000
+[phonegap] 
+[phonegap] ctrl-c to stop the server
+[phonegap] 
