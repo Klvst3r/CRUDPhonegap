@@ -38,10 +38,41 @@
 				<input type="number" class="form-control" id="precio">
 			</div>
 			<div class="form-group">
-				<button type="button" class="btn btn-primary" id="isert">Guardar</button>
+				<button type="button" class="btn btn-primary" id="insert">Guardar</button>
 			</div>
 		</form>
 	</div>
 
 </body>
 </html>
+
+<script>
+	$(document).ready(function(){
+		$("#insert").click(function(){
+			var nombre = $('#nombre').val();
+			var autor = $('#autor').val();
+			var precio = $('#precio').val();
+			var datos = "nombre=" + nombre + "&autor=" + autor + "&precio=" + precio + "&insert=";
+
+			console.log(datos);
+
+			if($.trim(nombre).length > 0 & $.trim(autor).length > 0 & $.trim(precio).length > 0){
+				$.ajax({
+					type: "POST",
+					url: "https://phon3gap.000webhostapp.com/insert.php",
+					data: datos,
+					success: function(data){
+						console.log(datos);
+						console.log(data);
+						if(data == "Correcto"){
+							alert("Guardado Correctamente");
+						}else{
+							alert("Error al guardar");
+						}
+					}
+
+				});
+			}
+		});
+	});
+</script>
