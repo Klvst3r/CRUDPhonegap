@@ -18,6 +18,8 @@
 </head>
 <body>
 	<nav class="navbar navbar-dark bg-dark">
+
+		<a href="index.html" class="btn btn-primary btn-sm"><i class="fas fa-home"></i></a>
 		
 	</nav>
 	<div class="container">
@@ -44,3 +46,21 @@
 
 </body>
 </html>
+
+<script>
+	$(document).ready(function(){
+		var url = "https://phon3gap.000webhostapp.com/select.php";
+		$.getJSON(url,function(result){
+			$.each(result, function(i, campo){
+				var id = campo.id;
+				var nombre = campo.nombre;
+				var autor = campo.autor;
+				var precio = campo.precio;
+				$("tbody").append("<tr><td>" + nombre + "</td><td>" + autor + "</td><td>" + precio + "</td><td><a class='btn btn-info' href='edit.html?id" + id + "&nombre=" + nombre + "&autor=" + autor + "&precio=" + precio + "'><i class='fas fa-edit'></i>");
+
+
+
+			});
+		});	
+	});
+</script>
